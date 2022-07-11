@@ -1,5 +1,4 @@
 name: Build and test
-
 on: push
 jobs:
   build_and_test:
@@ -12,5 +11,3 @@ jobs:
       - run: npm ci --ignore-scripts
       - run: npm run lint
       - run: npm run build
-      - run: npm run test
-  

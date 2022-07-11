@@ -17,10 +17,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/img-mapper/react-img-mapper.git"
+    "url": "https://github.com/Fordonsdalen-react-kth-dev/react-img-mapper.git"
   },
   "license": "MIT",
-  "author": "Nisharg Shah",
+  "author": "Kai Böhrnsen",
   "type": "commonjs",
   "main": "dist/ImageMapper.js",
   "types": "dist/ImageMapper.d.ts",
