@@ -14,7 +14,30 @@ export default {
 } as ComponentMeta<typeof ImageMapper>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof ImageMapper> = args => <ImageMapper {...args} />;
+function omit(keys, obj) {
+  if (!keys.length) return obj;
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const { [keys.pop()]: omitted, ...rest } = obj;
+  return omit(keys, rest);
+}
+
+const Template: ComponentStory<typeof ImageMapper> = args => (
+  <ImageMapper
+    {...omit(
+      [
+        'onClick',
+        'onImageMouseMove',
+        'onMouseDown',
+        'onMouseEnter',
+        'onMouseLeave',
+        'onMouseMove',
+        'onMouseUp',
+        'onLoad',
+      ],
+      args
+    )}
+  />
+);
 
 export const Simple = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
