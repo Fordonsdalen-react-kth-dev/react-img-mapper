@@ -11,7 +11,8 @@
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true
-    }
+    },
+    "allowImportExportEverywhere": true
   },
   "settings": {
     "react": {
@@ -30,11 +31,7 @@
     "plugin:import/warnings",
     "plugin:import/typescript"
   ],
-  "plugins": [
-    "prettier",
-    "@typescript-eslint",
-    "simple-import-sort"
-  ],
+  "plugins": ["prettier", "@typescript-eslint", "simple-import-sort"],
   "rules": {
     "prettier/prettier": "error",
     "no-unused-vars": "off",
@@ -65,33 +62,22 @@
     "react/jsx-filename-extension": [
       1,
       {
-        "extensions": [
-          ".ts",
-          ".tsx"
-        ]
+        "extensions": [".ts", ".tsx"]
       }
     ],
     "react/no-array-index-key": "off",
-    "react/jsx-fragments": [
-      "error",
-      "element"
-    ],
+    "react/jsx-fragments": ["error", "element"],
     "react/jsx-props-no-spreading": "off",
     "react/prop-types": [
       "error",
       {
-        "ignore": [
-          "children",
-          "location"
-        ]
+        "ignore": ["children", "location"]
       }
     ],
     "react/forbid-prop-types": [
       "error",
       {
-        "forbid": [
-          "any"
-        ]
+        "forbid": ["any"]
       }
     ],
     "react-hooks/exhaustive-deps": "off",
@@ -99,10 +85,7 @@
       "error",
       {
         "required": {
-          "some": [
-            "nesting",
-            "id"
-          ]
+          "some": ["nesting", "id"]
         }
       }
     ],
@@ -110,11 +93,15 @@
       "error",
       {
         "required": {
-          "some": [
-            "nesting",
-            "id"
-          ]
+          "some": ["nesting", "id"]
         }
+      }
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": ["**/*.stories.*", "**/.storybook/**/*.*"],
+        "peerDependencies": true
       }
     ]
   }

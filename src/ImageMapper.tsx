@@ -16,6 +16,7 @@ import {
 
 export * from './types';
 
+// eslint-disable-next-line react/function-component-definition
 const ImageMapper: React.FC<ImageMapperProps> = (props: ImageMapperProps) => {
   const {
     containerRef,

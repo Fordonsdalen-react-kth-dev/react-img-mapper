@@ -21,6 +21,7 @@ function omit(keys, obj) {
   return omit(keys, rest);
 }
 
+// eslint-disable-next-line react/function-component-definition
 const Template: ComponentStory<typeof ImageMapper> = args => (
   <ImageMapper
     {...omit(

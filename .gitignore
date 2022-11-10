@@ -8,6 +8,7 @@
 yarn.lock
 /dist
 .eslintcache
+.vscode
 
 # testing
 /coverage
