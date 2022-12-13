@@ -9,4 +9,4 @@ src
 .prettierrc
 yarn-error.log
 .husky
-.storybook/
+.storybook
