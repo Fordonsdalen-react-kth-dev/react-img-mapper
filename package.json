@@ -1,6 +1,6 @@
 {
   "name": "@fordonsdalen-react-kth-dev/react-img-mapper",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "React Component to highlight interactive zones in images",
   "keywords": [
     "react",
