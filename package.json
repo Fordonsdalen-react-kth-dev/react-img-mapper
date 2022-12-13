@@ -51,6 +51,9 @@
       "last 1 safari version"
     ]
   },
+  "dependencies": {
+    "react-fast-compare": "^3.2.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.15.0",
     "@mdx-js/react": "^2.1.5",
@@ -86,7 +89,6 @@
     "prettier": "^2.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-fast-compare": "^3.2.0",
     "typescript": "^4.4.2"
   },
   "peerDependencies": {
