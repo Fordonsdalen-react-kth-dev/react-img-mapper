@@ -8,4 +8,5 @@ src
 .eslintrc
 .prettierrc
 yarn-error.log
-/.husky
+.husky
+.storybook/
